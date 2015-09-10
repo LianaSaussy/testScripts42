@@ -11,8 +11,10 @@ j07-clean:
 j07-t:
 	./test_j07
 j07-git:
-	git add ../j07/ex*/ft_*.c
-	git commit -m '$(M)'
-	git push origin master
-
+	cd ../j07; \
+	git add ex*/ft*; \
+	git commit -m '$(M)'; \
+	git push origin master; 
+j07-norm:
+	cd ../j07; git ls-files | $(NC);
 
