@@ -12,11 +12,6 @@
 
 #include <stdio.h>
 
-char	*ft_strdup(char *src);
-int		*ft_range(int min, int max);
-int		ft_ultimate_range(int **range, int min, int max);
-char	*ft_concat_params(int argc, char **argv);
-
 int main(int argc, char **argv)
 {
 	printf("=== Ex00 ===\n");
