@@ -6,7 +6,7 @@
 /*   By: ecousine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/09/10 09:47:53 by ecousine          #+#    #+#             */
-/*   Updated: 2015/09/10 16:05:45 by jbyttner         ###   ########.fr       */
+/*   Updated: 2015/09/10 16:17:06 by jbyttner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,16 @@ char	*ft_strdup(char *src);
 
 int main(void)//(int argc, char **argv)
 {
+	/* uncomment as you progress */
 	char	*exNO = "\n=== Ex\%02d ===\n";
-	printf(exNO, 0);
+
+	
+	printf(exNO, 0); /*
 	printf("%s", ft_strdup("a string to copy\n"));
 
-/*	printf("=== Ex01 ===\n");
+	
+	*/ printf(exNO, 1); /*
+	
 	int i = 0;
 	int *tab_range = ft_range(-5, 8);
 	while (i < 13)
@@ -29,8 +34,8 @@ int main(void)//(int argc, char **argv)
 		i++;
 	}
 	printf("\n");
-
-	printf("=== Ex02 ===\n");
+	
+	*/ printf("=== Ex02 ===\n"); /*
 	int *a_tab;
 	int size;
 	i = 0;
@@ -42,6 +47,12 @@ int main(void)//(int argc, char **argv)
 		i++;
 	}
 
+	*/ printf(exNO, 3); /*
 	printf("=== Ex03 ===\n");
-	printf("%s", ft_concat_params(argc, argv));*/
+	printf("%s", ft_concat_params(argc, argv));
+	*/ printf(exNO, 4); /*
+	*/ printf(exNO, 5); /*
+	*/ printf(exNO, 6); /*
+	*/ printf(exNO, 7); /*
+	*/
 }

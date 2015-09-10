@@ -17,4 +17,5 @@ j07-git:
 	git push origin master; 
 j07-norm:
 	cd ../j07; git ls-files | $(NC);
-
+j07-setup:
+	cp main_j07_skel.c main_j07.c
