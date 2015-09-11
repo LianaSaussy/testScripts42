@@ -6,7 +6,7 @@
 /*   By: ecousine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/09/10 09:47:53 by ecousine          #+#    #+#             */
-/*   Updated: 2015/09/11 01:56:44 by jbyttner         ###   ########.fr       */
+/*   Updated: 2015/09/11 02:09:43 by jbyttner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strdup(char *src);
 int		*ft_range(int min, int max);
 char	*ft_concat_params(int argc, char **argv);
 char	**ft_split_whitespaces(char *str);
+void	ft_print_words_tables(char **tab);
+
 int main(int argc, char **argv)
 {
 	/* uncomment as you progress */
@@ -58,13 +60,17 @@ int main(int argc, char **argv)
 	printf("%s", ft_concat_params(argc, argv));
 	printf(exNO, 4); 
 	char **splitstr;
-	splitstr = ft_split_whitespaces(" 1  esdasad\newr\n\t\t  34ersdf sdf");
+	char **splitstr_start;
+	splitstr = ft_split_whitespaces(" 1  esdasad\newr\n\t\t  34ersdf sdf  ");
+	splitstr_start = splitstr;
 	while (*splitstr != 0)
 	{
 		printf("|%s|\n", *splitstr++);
 	}
-	 printf(exNO, 5); /*`
-	`*/ printf(exNO, 6); /*`
+	 printf(exNO, 5); 
+	 splitstr = splitstr_start;
+	ft_print_words_tables(splitstr);
+	 printf(exNO, 6); /*`
 	`*/ printf(exNO, 7); /*`
 	`*/
 }

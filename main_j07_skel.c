@@ -6,7 +6,7 @@
 /*   By: ecousine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/09/10 09:47:53 by ecousine          #+#    #+#             */
-/*   Updated: 2015/09/10 16:25:01 by jbyttner         ###   ########.fr       */
+/*   Updated: 2015/09/10 21:00:29 by jbyttner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,13 @@ int main(void)//(int argc, char **argv)
 	char	*exNO = "\n=== Ex\%02d ===\n";
 
 	
-	printf(exNO, 0); /*
+	printf(exNO, 0); /*`
 	
 	printf("\n|%s| == |%s|\n", ft_strdup("a string to copy\n")
 			, strdup("a string to copy\n"));
 	printf("%d != %d", ft_strdup(exNO), ft_strdup(exNO));
 
-	*/ printf(exNO, 1); /*
+	`*/ printf(exNO, 1); /*`
 	
 	int i = 0;
 	int *tab_range = ft_range(-5, 8);
@@ -39,7 +39,7 @@ int main(void)//(int argc, char **argv)
 	}
 	printf("\n");
 	
-	*/ printf("=== Ex02 ===\n"); /*
+	`*/ printf("=== Ex02 ===\n"); /*`
 	int *a_tab;
 	int size;
 	i = 0;
@@ -51,12 +51,12 @@ int main(void)//(int argc, char **argv)
 		i++;
 	}
 
-	*/ printf(exNO, 3); /*
+	`*/ printf(exNO, 3); /*`
 	printf("=== Ex03 ===\n");
 	printf("%s", ft_concat_params(argc, argv));
-	*/ printf(exNO, 4); /*
-	*/ printf(exNO, 5); /*
-	*/ printf(exNO, 6); /*
-	*/ printf(exNO, 7); /*
-	*/
+	`*/ printf(exNO, 4); /*`
+	`*/ printf(exNO, 5); /*`
+	`*/ printf(exNO, 6); /*`
+	`*/ printf(exNO, 7); /*`
+	`*/
 }
