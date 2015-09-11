@@ -6,7 +6,7 @@
 /*   By: ecousine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/09/10 09:47:53 by ecousine          #+#    #+#             */
-/*   Updated: 2015/09/11 02:09:43 by jbyttner         ###   ########.fr       */
+/*   Updated: 2015/09/11 03:18:02 by jbyttner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ int		*ft_range(int min, int max);
 char	*ft_concat_params(int argc, char **argv);
 char	**ft_split_whitespaces(char *str);
 void	ft_print_words_tables(char **tab);
+char	*ft_convert_base(char *nbr, char *base_from, char *base_to);
 
 int main(int argc, char **argv)
 {
@@ -67,10 +68,12 @@ int main(int argc, char **argv)
 	{
 		printf("|%s|\n", *splitstr++);
 	}
-	 printf(exNO, 5); 
-	 splitstr = splitstr_start;
+	printf(exNO, 5); 
+	splitstr = splitstr_start;
 	ft_print_words_tables(splitstr);
-	 printf(exNO, 6); /*`
-	`*/ printf(exNO, 7); /*`
+	printf(exNO, 6);
+	char nbc[] = "01234567";
+	printf("%d", *ft_convert_base("11111111", "01", nbc));
+	printf(exNO, 7); /*`
 	`*/
 }
